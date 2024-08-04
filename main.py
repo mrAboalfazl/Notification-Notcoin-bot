@@ -4,7 +4,7 @@ from telethon.tl.custom.message import Message
 from telethon import Button
 from database import information_user_collection, creat_Document, time
 
-client = TelegramClient("Notcoin main Notification bot", API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+client = TelegramClient("Notcoin main core Notification bot", API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 ###
 #Handle Start message and send greeting message
@@ -30,7 +30,6 @@ async def start(event):
         "is_bot" : user.bot,
         "restricted" : user.restricted,
         "date_enter_bot" : time.time(),
-        "count_keys" : 0
         },
         "NotcoinUserInformation" : 
         {
