@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "telegram bot python"
+version = "0.1.0"
+description = ""
+authors = ["amrstarta <45571435+amrstarta@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+telethon = "^1.36.0"
+requests = "^2.32.3"
+schedule = "^1.2.2"
+pymongo = "^4.8.0"
+selenium = "^4.23.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
